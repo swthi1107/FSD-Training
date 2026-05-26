@@ -3,3 +3,6 @@ OrderID | ProductID | Quantity | TotalPrice | OrderDate | Status
 1002 | 204 | 1 | 899 | 2026-05-22 | Shipped
 1003 | 202 | 1 | 699 | 2026-05-25 | Pending
 1004 | 203 | 3 | 1500 | 2026-05-26 | Processing
+1005 | 204 | 1 | 899 | 2026-05-22 | Shipped
+1006 | 202 | 1 | 699 | 2026-05-25 | Pending
+1007 | 203 | 3 | 1500 | 2026-05-26 | Processing
