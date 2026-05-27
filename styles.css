@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px 0px 10px 0px;
+}
+h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+}
+h4 a {
+    color: blue;
+}
+h4 a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+h3 a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+h3 a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+form {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: rgb(199, 199, 199);
+    align-items: center;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+form input[type="text"], form input[type="password"], form input[type="email"] {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgb(43, 43, 43);
+}
+form input[type="submit"]:hover {
+    background-color: #616161;
+}
+table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+    align-items: center;
+}
+table th, table td {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+table th {
+    background-color: #161616;
+    color: white;
+}
+td a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 4px;
+}
+td a.edit {
+    margin-right: 10px;
+}
+td a.edit:hover {
+    background-color: #56d10e;
+    text-decoration: none;
+}
+td a.delete {
+    margin-left: 10px;
+}
+td a.delete:hover {
+    background-color: #e64b4b;
+    text-decoration: none;
+}
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tr:nth-child(odd) {
+    background-color: #d8d8d8;
+}
