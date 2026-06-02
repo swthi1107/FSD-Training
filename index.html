@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+        <title>Local Community Event Portal</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+                background:#e9f0fb url('bg.webp') center/cover no-repeat
+            }
+        </style>
+</head>
+<body>
+    <header id="mainHeader">
+        <h1 id="heading" style="color:rgb(234, 32, 32)">Local Community Event Portal</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="text-align: center;">
+            <h2>Welcome to community portal</h2>
+        </section>
+        <section style="text-align: center;">
+            <p>Find community news and events here. Stay connected and engage with the community.</p>
+        </section>
+        <br>
+                <div class="events-grid">
+                    <div class="eventCard">
+                        <img src="movie.webp" alt="music" class="responsive-img">
+                        <br> <br> <br>
+                        <h3>Outdoor Movie Night</h3>
+                        <p>Bring your blankets and enjoy a movie under the stars.</p>
+                    </div>
+                    <div class="eventCard">
+                        <img src="market.webp" alt="music" class="responsive-img">
+                        <h3>Market</h3>
+                        <p>Fresh produce, handmade goods, and local crafts every Saturday</p>
+                    </div>
+                </div>
+
+                <table class="eventsTable">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                            <th>Place</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Outdoor Movie Night</td>
+                            <td>Jun 19</td>
+                            <td>Central Park</td>
+                        </tr>
+                        <tr>
+                            <td>Market</td>
+                            <td>Jun 27</td>
+                            <td>Town Square</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <form style="text-align: center;">
+                    <input style="width: 320px;padding: 0.85rem 1rem;font-size: 1rem;" type="email" placeholder="Enter email">
+                    <button style ="padding: 0.85rem 1.25rem;font-size: 1rem;min-width: 150px;" class="cta-button">Subscribe</button>
+                </form>
+                <br>
+                <br>
+
+                <article class="news">
+                    <h3 class="section-title">Community Bulletin</h3>
+                    <p>Park renovation work begins next week.</p>
+                    <p>Summer arts program registrations are open.</p>
+                    <p>Volunteers needed for community cleanup.</p>
+                    <p>New bike lanes coming to Main Street.</p>
+                </article>
+    </main>
+</body>
+</html>
