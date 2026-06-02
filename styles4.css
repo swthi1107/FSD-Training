@@ -1,0 +1,236 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/* LOGIN FORM */
+.login{
+    padding:20px;
+    animation:fadeIn 1s ease-in;
+    width:300px;
+}
+
+.login input{
+    display:block;
+    margin:10px 0;
+    padding:10px;
+    width:200px;
+}
+
+.login button{
+    padding:10px 20px;
+    background:blue;
+    color:white;
+    border:none;
+    transition:0.5s;
+}
+
+.login button:hover{
+    background:green;
+    transform:scale(1.1);
+}
+
+/* PRODUCT CARD */
+.product{
+    padding:20px;
+}
+
+.card{
+    width:200px;
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    transition:0.5s;
+}
+
+.card img:hover{
+    transform:scale(1.1);
+}
+
+.card button{
+    margin-top:10px;
+    padding:8px;
+    background:black;
+    color:white;
+    transition:0.5s;
+}
+
+.card button:hover{
+    background:green;
+}
+
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:darkblue;
+    padding:15px;
+    color:white;
+}
+
+.navbar nav{
+    display:flex;
+    gap:20px;
+}
+.navbar .logo img{
+    width:100px;
+}
+.navbar a{
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+    transition:all 0.3s;
+}
+
+.navbar a:hover{
+    color:yellow;
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:40px;
+    font-size:23px;
+    animation:fadeIn 2s ease-in;
+}
+
+.hero button{
+    padding:10px 20px;
+    background:red;
+    color:white;
+    border:none;
+    transition:0.5s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+    background:darkred;
+}
+
+/* FEATURES */
+.features{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    padding:20px;
+}
+
+.features div{
+    padding:15px;
+    background:lightgray;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:10px;
+    background:black;
+    color:white;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+    .navbar nav{
+        flex-direction:column;
+        width:100%;
+    }
+    .navbar a{
+        display:block;
+        padding:10px;
+        width:100%;
+    }
+    .features{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+/*Student Card */
+.prof{
+    padding:20px;
+
+}
+.pcard{
+    width:500px;
+    display:flex;
+    gap:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    align-items:center;
+}
+
+.pcard img{
+    width:150px;
+    height:150px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+
+/* MOBILE: stack layout */
+@media(max-width:768px){
+    .card{
+        flex-direction:column;
+        text-align:center;
+        width:100%;
+    }
+}
+
+/* Image gallery */
+.gallery-section{
+    padding:20px;
+}
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* TABLET */
+@media(max-width:768px){
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+@media(max-width:480px){
+    .gallery{
+        grid-template-columns:1fr;
+    }
+}
