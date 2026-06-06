@@ -77,5 +77,5 @@ College-Event-Management-System/
 ## GitHub Repository Link
 
 ```text
-(https://github.com/swthi1107/College-Event-Management-System/)
+https://github.com/swthi1107/College-Event-Management-System/
 ```
