@@ -58,7 +58,7 @@ h3 a{
 }
 h3 a:hover {
     color: blue;
-    text-decoration: underline;
+        background-color: rgb(164, 192, 211);
 }
 form {
     display: block;
@@ -117,26 +117,32 @@ td a {
     padding: 5px;
     border-radius: 4px;
 }
-td a.edit {
-    margin-right: 10px;
+td button {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
 }
-td a.edit:hover {
-    background-color: #56d10e;
-    text-decoration: none;
+td button:first-child:hover {
+    background-color: yellow;
 }
-td a.delete {
-    margin-left: 10px;
-}
-td a.delete:hover {
+
+td button:last-child:hover {
     background-color: #e64b4b;
-    text-decoration: none;
 }
 table tr:nth-child(even) {
     background-color:rgba(180, 214, 236, 0.815);
+    font-weight: bold;
 }
 table tr:nth-child(odd) {
     background-color: rgb(164, 199, 224);
+    font-weight: bold;
 }
+table tr:hover {
+    background-color: rgb(237, 237, 237);
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
