@@ -1,0 +1,30 @@
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: rgb(212, 231, 245);
+}
+
+.section{
+  padding: 70px 0;
+}
+
+.profile-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.skill-card{
+  margin-bottom: 20px;
+}
+
+.progress{
+  height: 20px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: rgb(219, 32, 32);
+}
