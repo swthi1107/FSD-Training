@@ -5,15 +5,37 @@ if (registerForm) {
         const username = document.getElementById("username").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirm-password").value;
         let users = JSON.parse(localStorage.getItem("users")) || [];
-        const existingUser = users.find(user => user.username.toLowerCase() === username.toLowerCase());
-        if (existingUser) {
-            alert("Username already exists. Please choose another username.");
+        var usernamePattern = /^[a-zA-Z0-9_]{3,15}$/;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var passwordPattern = /^[a-zA-Z0-9!@#$%^&*]{6,15}$/;
+        if (!usernamePattern.test(username)) {
+            alert("Username must be 3-15 characters and contain only letters, numbers, and underscores.");
             return;
         }
-        const existingEmail = users.find(user => user.email.toLowerCase() === email.toLowerCase());
-        if (existingEmail) {
-            alert("Email already registered.");
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        if (!passwordPattern.test(password)) {
+            alert("Password must be between 6 to 15 characters and contain only numbers, letters, and some special characters.");
+            return;
+        }
+        for (var i = 0; i < users.length; i++) {
+            if (users[i].username.toLowerCase() === username.toLowerCase()) {
+                alert("Username already exists. Please choose another username.");
+                return;
+            }
+        }
+        for (var i = 0; i < users.length; i++) {
+            if (users[i].email.toLowerCase() === email.toLowerCase()) {
+                alert("Email already registered.");
+                return;
+            }
+        }
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
             return;
         }
         users.push({
@@ -34,8 +56,14 @@ if (loginForm) {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
         let users = JSON.parse(localStorage.getItem("users")) || [];
-        const user = users.find(u => u.username === username && u.password === password);
-        if (user) {
+        var found = false;
+        for (var i = 0; i < users.length; i++) {
+            if (users[i].username === username && users[i].password === password) {
+                found = true;
+                break;
+            }
+        }
+        if (found) {
             localStorage.setItem("loggedInUser", username);
             alert("Login Successful! Welcome, " + username + "!");
             window.location.href = "dashboard.html";
@@ -90,6 +118,21 @@ if (addStudentForm) {
             branch: document.getElementById("branch").value,
             cgpa: document.getElementById("cgpa").value
         };
+        var rollPattern = /^[0-9]{4}$/;
+        var cgpaPattern = /^(10(\.0)?|[0-9](\.[0-9])?)$/;
+        var branchPattern = /^[A-Z]{2,10}$/;
+        if (!rollPattern.test(document.getElementById("roll").value)) {
+            alert("Roll number must contain only digits (4 digits).");
+            return;
+        }
+        if (!cgpaPattern.test(document.getElementById("cgpa").value)) {
+            alert("CGPA must be between 0.0 and 10.0");
+            return;
+        }
+        if (!branchPattern.test(document.getElementById("branch").value)) {
+            alert("Branch must contain only uppercase letters (e.g., CSE, ECE, IT).");
+            return;
+        }
         let students = JSON.parse(localStorage.getItem("students")) || [];
         students.push(student);
         localStorage.setItem("students", JSON.stringify(students));
@@ -143,11 +186,29 @@ if (editForm) {
     }
     editForm.addEventListener("submit", function (e) {
         e.preventDefault();
+        var rollPattern = /^[0-9]{4}$/;
+        var cgpaPattern = /^(10(\.0)?|[0-9](\.[0-9])?)$/;
+        var branchPattern = /^[A-Z]{2,10}$/;
+        var roll = document.getElementById("roll").value;
+        var cgpa = document.getElementById("cgpa").value;
+        var branch = document.getElementById("branch").value;
+        if (!rollPattern.test(roll)) {
+            alert("Roll number must contain exactly 4 digits.");
+            return;
+        }
+        if (!cgpaPattern.test(cgpa)) {
+            alert("CGPA must be between 0.0 and 10.0");
+            return;
+        }
+        if (!branchPattern.test(branch)) {
+            alert("Branch must contain only uppercase letters (CSE, ECE, IT).");
+            return;
+        }
         students[index] = {
             name: document.getElementById("name").value,
-            roll: document.getElementById("roll").value,
-            branch: document.getElementById("branch").value,
-            cgpa: document.getElementById("cgpa").value
+            roll: roll,
+            branch: branch,
+            cgpa: cgpa
         };
         localStorage.setItem("students", JSON.stringify(students));
         window.location.href = "view_students.html";
