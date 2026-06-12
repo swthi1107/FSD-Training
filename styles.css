@@ -11,6 +11,12 @@ img {
     display: block;
     margin: 0 auto;
 }
+#successMessage {
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
 nav {
     background-color: black;
     color: #fff;
