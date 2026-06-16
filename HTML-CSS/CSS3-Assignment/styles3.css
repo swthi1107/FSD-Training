@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    padding:20px;
+    font-family:Arial,sans-serif;
+}
+h2{
+    margin:20px 0 10px;
+}
+
+/* Exercise 9 */
+.loader{
+    width:50px;
+    height:50px;
+    border:5px solid lightgray;
+    border-top:5px solid rgb(6, 6, 43);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* Exercise 10 */
+.ball{
+    width:50px;
+    height:50px;
+    background:rgb(0, 76, 142);
+    border-radius:50%;
+    position:relative;
+    animation:move 2s linear infinite;
+}
+@keyframes move{
+    0%{
+        left:0;
+    }
+    50%{
+        left:200px;
+    }
+    100%{
+        left:0;
+    }
+}
+
+/* Exercise 11 */
+.text{
+    display:flex;
+    gap:5px;
+    font-size:30px;
+    font-weight:bold;
+    display:inline-block;
+    animation:bounce 1s infinite;
+}
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(25px);
+    }
+}
+
+/* Exercise 12 */
+.signal{
+    width:80px;
+    background:black;
+    padding:10px;
+    border-radius:10px;
+}
+.light{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin:10px auto;
+    opacity:0.2;
+    animation:signal 6s infinite;
+}
+.red{
+    background:red;
+    animation-delay:0s;
+}
+.yellow{
+    background:rgb(255, 221, 0);
+    animation-delay:2s;
+}
+.green{
+    background:green;
+    animation-delay:4s;
+}
+@keyframes signal{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.3;
+    }
+}
