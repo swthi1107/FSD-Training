@@ -1,0 +1,8 @@
+ProductID | ProductName | Category | Price 
+201 | Coffee Mug | Kitchenware | 200
+202 | Headphones | Electronics | 699 
+203 | Yoga Mat  | Sports & Fitness | 500 
+204 | LED Desk Lamp | Office Supplies | 899 
+205 | iPad | Electronics | 69900 
+206 | Shoes  | Footwear | 500 
+207 | Stapler | School Supplies | 89
