@@ -6,3 +6,4 @@ ProductID | ProductName | Category | Price
 205 | iPad | Electronics | 69900 
 206 | Shoes  | Footwear | 500 
 207 | Stapler | School Supplies | 89
+208 | Wooden Ruler | School Supplies | 50
