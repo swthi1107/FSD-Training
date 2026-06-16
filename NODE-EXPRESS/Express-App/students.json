@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Swathi",
+    "branch": "CSC",
+    "cgpa": 9.6
+  },
+  {
+    "id": 2,
+    "name": "Sri Harsha",
+    "branch": "CSC",
+    "cgpa": 9.3
+  },
+  {
+    "id": 3,
+    "name": "Meghana",
+    "branch": "CSC",
+    "cgpa": 9.2
+  },
+  {
+    "id": 4,
+    "name": "Varshini",
+    "branch": "CSC",
+    "cgpa": 8.3
+  },
+  {
+    "id": 5,
+    "name": "Sathvika",
+    "branch": "CSC",
+    "cgpa": 8
+  }
+]
