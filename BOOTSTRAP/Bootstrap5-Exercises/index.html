@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Exercises</title>
+    <style>
+    .media {
+        display: flex;
+        align-items: flex-start;
+    }
+    .media-body {
+        flex: 1;
+    }
+</style>
+</head>
+<body>
+
+    <header class="h3 m-3">Fundamentals of Responsive Grid Layout</header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-xl-4 bg-primary text-white p-3">Column 1</div>
+            <div class="col-sm-12 col-md-6 col-xl-4 bg-success text-white p-3">Column 2</div>
+            <div class="col-sm-12 col-md-6 col-xl-4 bg-danger text-white p-3">Column 3</div>
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Column Layouts and Grid Classes</header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-md-3 bg-warning text-white p-3">Sidebar</div>
+            <div class="col-8 col-md-9 bg-info text-white p-3">Content area</div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 bg-secondary text-white p-3">Column 1</div>
+            <div class="col-sm-3 bg-dark text-white p-3">Column 2</div>
+            <div class="col-sm-3 bg-secondary text-white p-3">Column 3</div>
+            <div class="col-sm-3 bg-dark text-white p-3">Column 4</div>
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Alignment and Reordering in Grid</header>
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center" style="height: 100px;">
+            <div class="col order-2 order-md-1 bg-info text-white text-center p-3">
+                <header class="h4">Column 1</header>
+                <p class="mt-2">This column is vertically and horizontally centered.</p>
+            </div>
+            <div class="col order-3 order-md-2 bg-secondary text-white text-center p-3">
+                <header class="h4">Column 2</header>
+                <p class="mt-2">This column is vertically and horizontally centered.</p>
+            </div>
+            <div class="col order-1 order-md-3 bg-warning text-white text-center p-3">
+                <header class="h4">Column 3</header>
+                <p class="mt-2">This column is vertically and horizontally centered.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Responsive Flexbox Utilities</header>
+    <nav class="container-fluid bg-dark py-3 px-3 rounded-4 shadow-sm">
+        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between">
+            <a href="#" class="navbar-brand mb-3 mb-md-0 fs-4 text-decoration-none text-light">Navbar</a>
+            <div class="d-flex flex-column flex-md-row gap-2">
+                <a href="#" class="btn btn-outline-primary text-light">Home</a>
+                <a href="#" class="btn btn-outline-info text-light">About</a>
+                <a href="#" class="btn btn-outline-success text-light">Services</a>
+                <a href="#" class="btn btn-outline-danger text-light">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="card m-3 w-25 shadow">
+        <div class="card-header">Student Card</div>
+        <div class="card-body d-flex flex-column align-items-center">
+            <div class="d-flex justify-content-center align-items-center" style="height: 200px; background-color: #f8f9fa;">
+            <img src="student.png" alt="Profile Picture" class="rounded-circle" style="max-width: 150px; max-height: 150px;">
+        </div>
+            <h5 class="card-title">Maddela Swathi</h5>
+            <p class="card-text">Roll no: 23B81A6261</p>
+            <p class="card-text">Branch: CSC</p>
+            <p class="card-text">Section: A</p>
+        </div>
+        <div class="card-footer justify-content-end">
+            <button class="btn btn-primary">View Profile</button>
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Typography</header>
+    <div class="m-3">
+        <div class="display-1">Display 1 Heading</div>
+        <p class="lead">Lead text</p>
+        <p class="text-muted">Muted text</p>
+        <p class="fw-bold">Bold text</p>
+        <p class="fw-normal">Normal text</p>
+        <p class="fw-light">Light text</p>
+        <p class="fs-1">Font size 1</p>
+        <p class="fs-3">Font size 3</p></p>
+        <p class="text-uppercase">uppercase text</p>
+        <p class="text-lowercase">LOWERCASE TEXT</p>
+        <p class="text-capitalize">capitalized text</p>
+        <p class="text-decoration-underline">Underlined text</p>
+        <p class="text-decoration-line-through">Strikethrough text</p>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Buttons</header>
+    <div class="m-3">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-success">Success Button</button>
+        <button class="btn btn-danger">Danger Button</button>
+        <button class="btn btn-warning">Warning Button</button>
+        <button class="btn btn-info">Info Button</button>
+        <button class="btn btn-light">Light Button</button>
+        <button class="btn btn-dark">Dark Button</button>
+        <br><br>
+        <button class="btn btn-outline-primary">Outline Primary</button>
+        <button class="btn btn-outline-secondary">Outline Secondary</button>
+        <button class="btn btn-outline-success">Outline Success</button>
+        <button class="btn btn-outline-danger">Outline Danger</button>
+    </div>
+    <div class="m-3">
+        <div class="btn-group" role="group" aria-label="Checkbox toggle group">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+        </div>
+    </div>
+    <div class="m-3">
+        <div class="btn-group" role="group">
+            <input type="checkbox" class="btn-check" id="check1">
+            <label class="btn btn-outline-success" for="check1">Yes</label>
+            <input type="checkbox" class="btn-check" id="check2">
+            <label class="btn btn-outline-danger" for="check2">No</label>
+            <input type="checkbox" class="btn-check" id="check3">
+            <label class="btn btn-outline-info" for="check3">Maybe</label>
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Navbars and Navigation</header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+        <div class="container-fluid">
+            //image as logo
+            <img src="student.png" alt="Logo" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="m-3">
+            <div class="flex-grow-1 border border-dark rounded p-3 mb-3">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#panel1" type="button" role="tab">Tab 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#panel2" type="button" role="tab">Tab 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#panel3" type="button" role="tab">Tab 3</button>
+                    </li>
+                </ul>
+                <div class="tab-content border-dark border-top-0 p-3">
+                    <div class="tab-pane fade show active" id="panel1" role="tabpanel">
+                        <p>This is the content for Tab 1.</p>
+                    </div>
+                    <div class="tab-pane fade" id="panel2" role="tabpanel">
+                        <p>This is the content for Tab 2.</p>
+                    </div>
+                    <div class="tab-pane fade" id="panel3" role="tabpanel">
+                        <p>This is the content for Tab 3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow-1 border border-dark rounded p-3 mb-3">
+                <ul class="nav nav-pills mb-3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pill1" data-bs-toggle="pill" data-bs-target="#pill-panel1" type="button" role="tab">Pill 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pill2" data-bs-toggle="pill" data-bs-target="#pill-panel2" type="button" role="tab">Pill 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pill3" data-bs-toggle="pill" data-bs-target="#pill-panel3" type="button" role="tab">Pill 3</button>
+                    </li>
+                </ul>
+                <div class="tab-content border border-start p-3">
+                    <div class="tab-pane fade show active" id="pill-panel1" role="tabpanel">
+                        <p>This is the content for Pill 1.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pill-panel2" role="tabpanel">
+                        <p>This is the content for Pill 2.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pill-panel3" role="tabpanel">
+                        <p>This is the content for Pill 3.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Cards and Media Objects</header>
+    <div class="card m-3 w-25 shadow">
+        <div class="card-header">Profile Card</div>
+        <div class="card-body d-flex flex-column align-items-center">
+            <div class="d-flex justify-content-center align-items-center" style="height: 200px; background-color: #f8f9fa;">
+            <img src="profile.avif" alt="Profile Picture" class="rounded-circle" style="max-width: 150px; max-height: 150px;">
+        </div>
+            <h5 class="card-title">Maddela Swathi</h5>
+            <p class="card-text">Roll no: 23B81A6261</p>
+            <p class="card-text">Branch: CSC</p>
+            <p class="card-text">Section: A</p>
+        </div>
+        <div class="card-footer justify-content-end">
+            <button class="btn btn-primary">View Profile</button>
+        </div>
+    </div>
+    <br>
+    <div class="m-3">
+        <div class="media p-3 w-50 shadow border border-dark rounded mb-3 bg-light">
+            <img src="image.jpg" class="me-3 rounded flex-shrink-0" alt="Profile" style="width: 100px; height: 100px;">
+            <div class="media-body">
+                <h5 class="mt-0">Left-Aligned Media Object</h5>
+                <p class="mb-1">Image on the left with content on the right. This is a standard media layout pattern.</p>
+                <small class="text-muted">Perfect for comments, blog posts, or user testimonials.</small>
+            </div>
+        </div>
+    <br><br>
+
+    <header class="h3 m-3">Spacing Utilities</header>
+    <div class="m-3 p-3 border border-dark rounded bg-light">
+        <div class="border p-2 mb-3 bg-white">
+            <p class="mb-0">This block uses <code>p-2</code> for padding and <code>mb-3</code> for margin below.</p>
+        </div>
+        <div class="border py-5 px-3 mb-3 bg-white">
+            <p class="mb-0">This section uses <code>py-5</code> for vertical padding and <code>px-3</code> for horizontal padding.</p>
+        </div>
+        <div class="border mt-4 p-3 bg-white">
+            <p class="mb-0">This section uses <code>mt-4</code> to add top margin and <code>p-3</code> for overall padding.</p>
+        </div>
+    </div>
+    <br>
+    <div class="m-3">
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="card-text text-muted">Perfect for personal use.</p>
+                        <h2 class="display-6 mt-3 mb-4">$9<span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">5 projects</li>
+                            <li class="mb-2">10 GB storage</li>
+                            <li class="mb-2">Basic support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Choose Basic</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-primary p-3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Standard</h5>
+                        <p class="card-text text-muted">Most popular plan.</p>
+                        <h2 class="display-6 mt-3 mb-4">$19<span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">15 projects</li>
+                            <li class="mb-2">50 GB storage</li>
+                            <li class="mb-2">Priority support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-auto">Choose Standard</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Premium</h5>
+                        <p class="card-text text-muted">Best for teams and businesses.</p>
+                        <h2 class="display-6 mt-3 mb-4">$29<span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Unlimited projects</li>
+                            <li class="mb-2">200 GB storage</li>
+                            <li class="mb-2">24/7 support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Choose Premium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Colors and Backgrounds</header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-primary text-white p-4 rounded">
+                <h4>Primary Background</h4>
+                <p>This section uses the primary color as its background with white text for contrast.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid bg-gradient bg-dark text-white p-5 rounded">
+        <h2>Dark Gradient Section</h2>
+        <p>This section uses a dark gradient background with white text for a sleek and modern look.</p>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Display and Visibility</header>
+    <div class="m-3">
+        <div class="d-none d-md-block p-3 bg-info text-black rounded">
+            Visible on Medium and above (d-none d-md-block)
+        </div>
+        <div class="d-none d-lg-flex p-3 bg-success text-black rounded">
+            Visible on Large and above as Flex (d-none d-lg-flex)
+        </div>
+        <div class="d-block d-md-none p-3 bg-warning text-black rounded">
+            Visible on Mobile Only (d-block d-md-none)
+        </div>
+    </div>
+    <div class="m-3">
+        <div class="row">
+            <div class="col-md-3 d-none d-md-block bg-secondary text-light p-3 border">
+                <h6>Sidebar</h6>
+                <p>Only visible on tablets and above</p>
+            </div>
+            <div class="col-md-9 bg-light text-dark border border-secondary p-3">
+                <h6>Main Content</h6>
+                <p>Sidebar hidden on mobile (d-none d-md-block)</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Borders, Shadows, and Rounded Corners</header>
+    <div class="m-3">
+        <img src="dog.jpg" alt="Profile" class="border border-primary border-3 rounded-circle" style="width: 200px; height: 200px;">
+    </div>
+    <div class="card m-3 w-25 shadow-lg rounded-pill">
+        <div class="card-body text-center">
+            <h5 class="card-title mb-3">Shadow and Rounded Card</h5>
+            <p class="card-text">This card has a large shadow and pill-shaped rounded corners.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>  
+        </div>
+    </div>
+    <br><br>
+
+    <header class="h3 m-3">Positioning Utilities</header>
+    <div class="position-relative m-3">
+        <img src="headphones.jpg" alt="Profile" class="rounded" style="width: 200px; height: 200px;">
+        <span class="position-absolute translate-middle badge rounded-pill bg-danger">
+            New
+        </span>
+    </div>
+    <br>
+
+    <header class="h3 m-3">Icons with Bootstrap Icons</header>
+    <div class="position-fixed bottom-0 w-100 bg-dark text-white text-center py-2">
+        <p class="mb-0">Fixed Footer using position-fixed</p>
+        <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white mx-2"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="container m-3">
+        <button class="btn btn-primary me-2">
+            <i class="bi bi-pencil-square"></i>
+        </button>
+        <button class="btn btn-danger me-2">
+            <i class="bi bi-trash"></i>
+        </button>
+        <button class="btn btn-success me-2">
+            <i class="bi bi-check-lg"></i>
+        </button>
+        <button class="btn btn-warning">
+            <i class="bi bi-download"></i>
+        </button>
+    </div>
+    <br><br>
+
+     <header class="h3 m-3">Bootstrap 5 JavaScript Plugins</header>
+    <div class="m-3">
+        <button type="button" class="btn btn-info mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Open Modal
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        This is a Bootstrap modal triggered by a button.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="accordion w-50" id="exampleAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#exampleAccordion">
+                    <div class="accordion-body">
+                        This is the first item's accordion body.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#exampleAccordion">
+                    <div class="accordion-body">
+                        This is the second item's accordion body.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item 3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#exampleAccordion">
+                    <div class="accordion-body">
+                        This is the third item's accordion body.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+</body>
+</html>
