@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "username": "swa123",
+      "email": "s@gmail.com",
+      "password": "SMS_2026",
+      "id": 1
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "roll": "0501",
+      "branch": "CSE",
+      "cgpa": "8.7"
+    },
+    {
+      "id": 2,
+      "name": "Priya Reddy",
+      "roll": "0502",
+      "branch": "CSE",
+      "cgpa": "9.1"
+    },
+    {
+      "id": 3,
+      "name": "Arjun Kumar",
+      "roll": "0703",
+      "branch": "ECE",
+      "cgpa": "8.4"
+    },
+    {
+      "id": 4,
+      "name": "Sneha Patel",
+      "roll": "3204",
+      "branch": "IT",
+      "cgpa": "9.9"
+    },
+    {
+      "id": 5,
+      "name": "Vikram Singh",
+      "roll": "6605",
+      "branch": "MECH",
+      "cgpa": "8.0"
+    }
+  ]
+}
