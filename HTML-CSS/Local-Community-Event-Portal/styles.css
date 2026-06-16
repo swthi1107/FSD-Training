@@ -1,0 +1,205 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+#mainHeader{
+    padding: 1rem;
+    background: linear-gradient(#006699,#6fb2f5);
+    color: #fff;
+    text-align: center;
+}
+
+/* Body background with fallback (HEX) and overlay example (RGBA) */
+body{
+    font-family: Inter,
+    system-ui,-apple-system,
+    Segoe UI,Roboto,Arial,sans-serif;
+    min-height: 100vh;
+    background: #e9f0fb url('bg.jpg') center/cover no-repeat;
+}
+
+.bg-overlay{
+    background-color: rgba(0,0,0,0.25);
+}
+
+/* Element selector: all h2 */
+h2{
+    color: #003366;
+    font-size: 1.25rem;
+    padding: .4rem 0;
+}
+
+/* Grouping selector: h3 and p */
+h3,
+p{
+    color: #222;
+    line-height: 1.45;
+}
+
+/* Class selector: event containers */
+.events-grid{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.eventCard{
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: .8rem;
+    margin: .4rem 0;
+    background: #fff;
+    flex: 1 1 48%;
+}
+
+.responsive-img{
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+}
+
+/* Section header gradient */
+.section-title{
+    display: inline-block;
+    padding: .25rem .5rem;
+    background: rgb(54, 58, 68);
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Typography examples */
+.hero{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.eventCard h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-transform: capitalize;
+}
+
+.eventCard p{
+    font-size: .95rem;
+    font-style: italic;
+}
+
+/* Links with pseudo-classes */
+a:link{
+    color: #021223;
+}
+
+a:visited{
+    color: #4b0082;
+}
+
+a:hover{
+    color: #004080;
+    text-decoration: underline;
+}
+
+a:active{
+    color: #00264d;
+}
+
+/* Nav list styling: remove bullets and add spacing */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-left: 45%;
+}
+
+nav li{
+    padding: .25rem .5rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    
+    /* stack nav vertically */
+    nav ul{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    /* make event cards full-width */
+    .eventCard{
+        flex: 1 1 100%;
+    }
+
+    /* reduce font sizes for small screens */
+    h2{
+        font-size: 1.05rem;
+    }
+
+    body{
+        font-size: 95%;
+    }
+}
+
+/* Flexible units examples */
+main{
+    padding: 2vw;
+}
+
+h1{
+    font-size: calc(18px + 1.2vw);
+}
+
+/* Table styling: borders, padding, collapse, center, zebra */
+.eventsTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: #fff;
+}
+
+.eventsTable th,
+.eventsTable td{
+    border: 1px solid #ddd;
+    padding: .5rem;
+    text-align: center;
+}
+
+.eventsTable tbody tr:nth-child(even){
+    background: #f7f7f7;
+}
+
+/* Box model & form outline */
+.eventCard{
+    border-radius: 6px;
+}
+
+.field{
+    padding: .4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.field:focus{
+    outline: 3px solid rgba(0,123,255,0.25);
+}
+
+/* Visibility examples */
+.hidden-visibility{
+    visibility: hidden;
+}
+
+.hidden-display{
+    display: none;
+}
+
+/* News multi-column layout */
+.news{
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    padding: 1rem 0;
+}
